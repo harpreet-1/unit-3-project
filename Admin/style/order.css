@@ -1,0 +1,229 @@
+
+
+.filter_sort{
+    padding: 20px 0;
+     width: 100%;
+ 
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+ }
+ .filter_sort select{
+    margin: 10px;
+    background: linear-gradient(to right, #d83063, #7d1534);
+    color: aliceblue;
+    border-radius:4px ;
+    outline: 0;
+    border: none;
+    font-size: 18px;
+    padding: 5px 8px;
+}
+.filter_sort select option{
+    background: #d83063;
+    color: rgba(0, 0, 0, 0.596);
+    border:none;
+
+}
+.navigation ul>:nth-child(5) li{
+    background:aliceblue;
+    border-radius: 50px  0 0 50px;
+}
+
+.ordersDetails{
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    display: grid;
+    gap: 20px;
+    /* grid-template-columns: 2fr 1fr; */
+}
+.ordersBox{
+    padding: 20px;
+    position: relative;
+    display: grid;
+    /* min-height: 530px; */
+    background: white;
+}
+.cardHeader{
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+
+}
+.cardHeader h2{
+    font-weight: 600;
+}
+#orderTitle{
+    border-radius: 20px 0 20px 0;
+    background-color:aliceblue;
+}
+.ordersDetails table{
+    
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+.ordersDetails table thead td{
+    font-weight: 600;
+}
+
+.ordersDetails .ordersBox table tr{
+  
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.ordersDetails .ordersBox table tbody tr:last-child{
+    border-bottom: none;
+}
+.ordersDetails .ordersBox table tbody tr:hover{
+    background:aliceblue;
+    color: rgb(71, 17, 17);
+    /* padding: 0; */
+}
+.ordersDetails .ordersBox table tr td{
+    padding: 9px  ;
+    text-align: center;
+    /* padding:  0 15px; */
+}
+
+.ordersDetails .ordersBox table    tr td:first-child{
+    text-align: left;
+}
+.ordersDetails .ordersBox table  tbody  tr td:last-child select{
+    border-radius: 2px;
+    font-weight: 600;
+    border: none;
+    font-size: 16px;
+    color: white;
+    padding: 6px 10px;
+    background: #d83063;
+    transition: 0.5s;
+    outline: none;
+}
+
+/* .ordersDetails .ordersBox table  tbody  tr td:nth-child(7) span{
+ font-weight:600;
+    padding: 6px 10px;
+    border-radius: 2px;
+    background-color: #ed5132;
+} */
+.ordersDetails .ordersBox table    tr td:last-child{
+    text-align: right;
+}
+.ordersDetails .ordersBox table  tr td:nth-child(1) img{
+
+    /* padding-right: 20px; */
+   
+    width: 100px ;
+    /* border-radius: 4px; */
+
+
+}
+.ordersDetails .ordersBox table  tr td:nth-child(3),
+.ordersDetails .ordersBox table  tr td:nth-child(4),
+.ordersDetails .ordersBox table  tr td:nth-child(5){
+    /* text-align: center; */
+}
+.recentCustmores tr td span{
+    font-size: 14px;
+    color: #999;
+}
+@media( max-width: 992px){
+    .navigation{
+        left: -300px;
+    }
+    .navigation.active{
+        left:0;
+        width: 300px;
+    }
+    .main{
+        width: 100%;
+        left:0;
+
+    }
+    .main.active{
+        width: calc(100% - 300px);
+        left: 300px;
+    }
+    .cardBox{
+        grid-template-columns: repeat(2,1fr);
+     
+    }
+}
+@media( max-width: 768px){
+    .ordersDetails{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .cardHeader h2{
+        font-weight: 600px;
+        font-size: 18px;
+
+    }
+}
+@media( max-width: 480px){
+    .filter_sort{
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    .filter_sort select{
+        margin: 5px;
+        background: #ed5132;
+        color: aliceblue;
+        border-radius:4px ;
+        outline: 0;
+        border: none;
+        font-size: 15px;
+        padding: 5px;
+    }
+    .filter_sort select option{
+        background: #e58673;
+        color: rgba(0, 0, 0, 0.596);
+        border:none;
+        font-size: 12px;
+        
+    }  
+    .cardBox{
+        grid-template-columns: repeat(1,1fr);
+
+    }
+    .ordersDetails .ordersBox {
+        overflow-x: auto;
+    }
+    .ordersDetails .ordersBox table{
+        width: 600px;
+    }
+    .navigation{
+        left:-100px ;
+        width: 100px;
+        z-index: 1000;
+    }
+    
+}
+
+/* @media( max-width: 480px){
+
+    .filter_sort{
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    .filter_sort select{
+        margin: 5px;
+        background: #ed5132;
+        color: aliceblue;
+        border-radius:4px ;
+        outline: 0;
+        border: none;
+        font-size: 15px;
+        padding: 5px;
+    }
+    .filter_sort select option{
+        background: #e58673;
+        color: rgba(0, 0, 0, 0.596);
+        border:none;
+        font-size: 12px;
+        
+    }  
+    
+} */
+
+

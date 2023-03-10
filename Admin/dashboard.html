@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ace Fashion/admin</title>
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style/dashbord.css" />
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navigation">
+        <ul>
+          <a href="dashboard.html">
+            <li id="logoIcon">
+              <span class="icon"> <i class="fa fa-dashboard icons"></i></span>
+              <span class="title"><h2>Ace Fashion</h2></span>
+            </li>
+          </a>
+          <a href="dashboard.html">
+            <li id="dashboardTitle">
+              <span class="icon"> <i class="fa fa-dashboard icons"></i></span>
+              <span class="title">Dashboard</span>
+            </li>
+          </a>
+          <a href="customers.html">
+            <li>
+              <span class="icon"> <i class="fa fa-users icons"></i></span>
+              <span class="title">Custmores</span>
+            </li>
+          </a>
+          <a href="products.html">
+            <li>
+              <span class="icon"><i class="fa fa-list icons"></i></span>
+              <span class="title">Products</span>
+            </li>
+          </a>
+          <a href="order.html">
+            <li>
+              <span class="icon">
+                <i class="fa fa-shopping-bag icons"></i
+              ></span>
+              <span class="title">Orders</span>
+            </li>
+          </a>
+          <a href="/index.html">
+            <li>
+              <span class="icon">
+                <i class="fa-solid fa-right-to-bracket"></i
+              ></span>
+              <span class="title">Logout</span>
+            </li>
+          </a>
+        </ul>
+      </div>
+      <div class="main">
+        <div class="topbar">
+          <div class="toggle">☰</div>
+          <div class="search">
+            <label
+              ><input
+                type="text"
+                placeholder="Search here"
+                name=""
+                id="searchProduct" />
+              <i id="searchbtn" class="fa-solid fa-magnifying-glass"></i
+            ></label>
+          </div>
+          <div class="user">
+            <img
+              src="https://media.geeksforgeeks.org/wp-content/uploads/20221210180014/profile-removebg-preview.png"
+              class="pro-img"
+            />
+          </div>
+        </div>
+        <div class="cardBox">
+          <div class="card">
+            <div>
+              <div class="totalProducts numbers">98</div>
+              <div class="cardName">Products</div>
+            </div>
+            <div class="iconBox"><i class="fa fa-list icons"></i></div>
+          </div>
+          <div class="card">
+            <div>
+              <div class="Custmores_value numbers">12</div>
+              <div class="cardName">Custmores</div>
+            </div>
+            <div class="iconBox"><i class="fa fa-users icons"></i></div>
+          </div>
+          <div class="card">
+            <div>
+              <div class="Custmores_value numbers">16</div>
+              <div class="cardName">Orders</div>
+            </div>
+            <div class="iconBox"><i class="fa fa-shopping-bag icons"></i></div>
+          </div>
+          <div class="card">
+            <div>
+              <div class="Custmores_value numbers">2046</div>
+              <div class="cardName">Revenue</div>
+            </div>
+            <div class="iconBox">
+              <i class="fa-solid fa-indian-rupee-sign"></i>
+            </div>
+          </div>
+        </div>
+        <div class="details">
+          <div class="recentOrders">
+            <div class="cardHeader">
+              <h2>Recent Orders</h2>
+              <a href="#" class="btn">View All</a>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <td>Name</td>
+                  <td>Price</td>
+                  <td>Payment</td>
+                  <td>Status</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Coconut Milk Shampoo</td>
+                  <td>$1200</td>
+                  <td>Paid</td>
+                  <td><span class="status delivered">Delivered</span></td>
+                </tr>
+                <tr>
+                  <td>Coconut Milk Shampoo</td>
+                  <td>$1200</td>
+                  <td>Paid</td>
+                  <td><span class="status pending">Pending</span></td>
+                </tr>
+                <tr>
+                  <td>Coconut Milk Shampoo</td>
+                  <td>$1200</td>
+                  <td>Paid</td>
+                  <td><span class="status pending">Pending</span></td>
+                </tr>
+                <tr>
+                  <td>Coconut Milk Shampoo</td>
+                  <td>$1200</td>
+                  <td>Paid</td>
+                  <td><span class="status delivered">Delivered</span></td>
+                </tr>
+                <tr>
+                  <td>Coconut Milk Shampoo</td>
+                  <td>$1200</td>
+                  <td>Paid</td>
+                  <td><span class="status delivered">Delivered</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="recentCustmores">
+            <div class="cardHeader">
+              <h2>Recent Custmores</h2>
+            </div>
+            <table>
+              <tbody>
+                <tr>
+                  <td width="60px">
+                    <div class="curstomoreImage">
+                      <img
+                        src="https://media.geeksforgeeks.org/wp-content/uploads/20221210180014/profile-removebg-preview.png"
+                        alt=""
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <h4>
+                      David
+                      <br />
+                      <span>India</span>
+                    </h4>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="60px">
+                    <div class="curstomoreImage">
+                      <img
+                        src="https://media.geeksforgeeks.org/wp-content/uploads/20221210180014/profile-removebg-preview.png"
+                        alt=""
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <h4>
+                      David
+                      <br />
+                      <span>India</span>
+                    </h4>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="60px">
+                    <div class="curstomoreImage">
+                      <img
+                        src="https://media.geeksforgeeks.org/wp-content/uploads/20221210180014/profile-removebg-preview.png"
+                        alt=""
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <h4>
+                      David
+                      <br />
+                      <span>India</span>
+                    </h4>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="60px">
+                    <div class="curstomoreImage">
+                      <img
+                        src="https://media.geeksforgeeks.org/wp-content/uploads/20221210180014/profile-removebg-preview.png"
+                        alt=""
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <h4>
+                      David
+                      <br />
+                      <span>India</span>
+                    </h4>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="60px">
+                    <div class="curstomoreImage">
+                      <img
+                        src="https://media.geeksforgeeks.org/wp-content/uploads/20221210180014/profile-removebg-preview.png"
+                        alt=""
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <h4>
+                      David
+                      <br />
+                      <span>India</span>
+                    </h4>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="script/dashbord.js"></script>
+</html>

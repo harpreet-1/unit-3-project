@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ace Fashion/admin</title>
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style/Products.css" />
+    <link rel="stylesheet" href="style/dashbord.css" />
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navigation">
+        <ul>
+          <a href="dashboard.html">
+            <li>
+              <span class="icon"> <i class="fa fa-dashboard icons"></i></span>
+              <span class="title"><h2>Ace Fashion</h2></span>
+            </li>
+          </a>
+          <a href="dashboard.html">
+            <li>
+              <span class="icon"> <i class="fa fa-dashboard icons"></i></span>
+              <span class="title">Dashboard</span>
+            </li>
+          </a>
+          <a href="customers.html">
+            <li>
+              <span class="icon"> <i class="fa fa-users icons"></i></span>
+              <span class="title">Custmores</span>
+            </li>
+          </a>
+          <a href="products.html">
+            <li>
+              <span class="icon"><i class="fa fa-list icons"></i></span>
+              <span class="title">Products</span>
+            </li>
+          </a>
+          <a href="order.html">
+            <li>
+              <span class="icon">
+                <i class="fa fa-shopping-bag icons"></i
+              ></span>
+              <span class="title">Orders</span>
+            </li>
+          </a>
+          <a href="/ACE FASHION/index.html">
+            <li>
+              <span class="icon">
+                <i class="fa-solid fa-right-to-bracket"></i
+              ></span>
+              <span class="title">Logout</span>
+            </li>
+          </a>
+        </ul>
+      </div>
+
+      <div class="main">
+        <div class="topbar">
+          <div class="toggle">☰</div>
+          <h1>Products</h1>
+          <div class="search">
+            <label
+              ><input
+                type="text"
+                placeholder="Search here"
+                name=""
+                id="searchProduct" />
+              <i id="searchbtn" class="fa-solid fa-magnifying-glass"></i
+            ></label>
+          </div>
+          <div class="user">
+            <img
+              src="https://media.geeksforgeeks.org/wp-content/uploads/20221210180014/profile-removebg-preview.png"
+              class="pro-img"
+            />
+          </div>
+        </div>
+        <div class="filter_sort">
+          <div>
+            <select name="" id="sortByprice">
+              <option value="">Sort By Price</option>
+              <option value="asc">Ascending</option>
+              <option value="desc">Descending</option>
+            </select>
+          </div>
+          <div>
+            <select name="" id="sortByTitle">
+              <option value="">Sort By Title</option>
+              <option value="asc">Ascending</option>
+              <option value="desc">Descending</option>
+            </select>
+          </div>
+          <div>
+            <select name="" id="filterByCategory">
+              <option value="">Filter By Category</option>
+              <option value=" kitchen ware">Kichen Ware</option>
+              <option value="Personal Care">Beauty & Personal Care"</option>
+              <option value="saree">Sarees</option>
+              <option value="kurta">Kurta</option>
+              <option value="ceramics">Caramic Mugs</option>
+              <option value="tote bags">tote bags</option>
+              <option value="home decore">Home Decore</option>
+              <option value="idols">idols</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="productsDetails">
+          <div class="addProducts">
+            <div>Add Product<i class="fa-solid fa-cart-plus"></i></div>
+          </div>
+
+          <div class="productsBox">
+            <table>
+              <thead>
+                <tr>
+                  <td>Image</td>
+                  <td>Id</td>
+
+                  <td>Title</td>
+
+                  <td>Category</td>
+                  <td>Price</td>
+
+                  <td>Edit</td>
+                  <td>Remove</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <img
+                      src="https://i.etsystatic.com/21184941/c/1145/910/0/9/il/2d7e63/4661646365/il_680x540.4661646365_2iz8.jpg"
+                      class="pro-img"
+                    />
+                  </td>
+                  <td>1</td>
+                  <td style="max-width: 250px">
+                    Exclusive Bollywood Designer color Saree
+                  </td>
+                  <td><span class="productCategory">Saree</span></td>
+                  <td><span class="productPrice">9788</span></td>
+                  <td><span class="editProduct">Edit </span></td>
+                  <td><span class="removeProduct">Remove</span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="https://i.etsystatic.com/21184941/c/1145/910/0/9/il/2d7e63/4661646365/il_680x540.4661646365_2iz8.jpg"
+                      class="pro-img"
+                    />
+                  </td>
+                  <td>1</td>
+                  <td style="max-width: 250px">
+                    Exclusive Bollywood Designer color Saree
+                  </td>
+                  <td><span class="productCategory">Saree</span></td>
+                  <td><span class="productPrice">9788</span></td>
+                  <td><span class="editProduct">Edit </span></td>
+                  <td><span class="removeProduct">Remove</span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="https://i.etsystatic.com/21184941/c/1145/910/0/9/il/2d7e63/4661646365/il_680x540.4661646365_2iz8.jpg"
+                      class="pro-img"
+                    />
+                  </td>
+                  <td>1</td>
+                  <td style="max-width: 250px">
+                    Exclusive Bollywood Designer color Saree
+                  </td>
+                  <td><span class="productCategory">Saree</span></td>
+                  <td><span class="productPrice">9788</span></td>
+                  <td><span class="editProduct">Edit </span></td>
+                  <td><span class="removeProduct">Remove</span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="https://i.etsystatic.com/21184941/c/1145/910/0/9/il/2d7e63/4661646365/il_680x540.4661646365_2iz8.jpg"
+                      class="pro-img"
+                    />
+                  </td>
+                  <td>1</td>
+                  <td style="max-width: 250px">
+                    Exclusive Bollywood Designer color Saree
+                  </td>
+                  <td><span class="productCategory">Saree</span></td>
+                  <td><span class="productPrice">9788</span></td>
+                  <td><span class="editProduct">Edit </span></td>
+                  <td><span class="removeProduct">Remove</span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="https://i.etsystatic.com/21184941/c/1145/910/0/9/il/2d7e63/4661646365/il_680x540.4661646365_2iz8.jpg"
+                      class="pro-img"
+                    />
+                  </td>
+                  <td>1</td>
+                  <td style="max-width: 250px">
+                    Exclusive Bollywood Designer color Saree
+                  </td>
+                  <td><span class="productCategory">Saree</span></td>
+                  <td><span class="productPrice">9788</span></td>
+                  <td><span class="editProduct">Edit </span></td>
+                  <td><span class="removeProduct">Remove</span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="https://i.etsystatic.com/21184941/c/1145/910/0/9/il/2d7e63/4661646365/il_680x540.4661646365_2iz8.jpg"
+                      class="pro-img"
+                    />
+                  </td>
+                  <td>1</td>
+                  <td style="max-width: 250px">
+                    Exclusive Bollywood Designer color Saree
+                  </td>
+                  <td><span class="productCategory">Saree</span></td>
+                  <td><span class="productPrice">9788</span></td>
+                  <td><span class="editProduct">Edit </span></td>
+                  <td><span class="removeProduct">Remove</span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="https://i.etsystatic.com/21184941/c/1145/910/0/9/il/2d7e63/4661646365/il_680x540.4661646365_2iz8.jpg"
+                      class="pro-img"
+                    />
+                  </td>
+                  <td>1</td>
+                  <td style="max-width: 250px">
+                    Exclusive Bollywood Designer color Saree
+                  </td>
+                  <td><span class="productCategory">Saree</span></td>
+                  <td><span class="productPrice">9788</span></td>
+                  <td><span class="editProduct">Edit </span></td>
+                  <td><span class="removeProduct">Remove</span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="https://i.etsystatic.com/21184941/c/1145/910/0/9/il/2d7e63/4661646365/il_680x540.4661646365_2iz8.jpg"
+                      class="pro-img"
+                    />
+                  </td>
+                  <td>1</td>
+                  <td style="max-width: 250px">
+                    Exclusive Bollywood Designer color Saree
+                  </td>
+                  <td><span class="productCategory">Saree</span></td>
+                  <td><span class="productPrice">9788</span></td>
+                  <td><span class="editProduct">Edit </span></td>
+                  <td><span class="removeProduct">Remove</span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="https://i.etsystatic.com/21184941/c/1145/910/0/9/il/2d7e63/4661646365/il_680x540.4661646365_2iz8.jpg"
+                      class="pro-img"
+                    />
+                  </td>
+                  <td>1</td>
+                  <td style="max-width: 250px">
+                    Exclusive Bollywood Designer color Saree
+                  </td>
+                  <td><span class="productCategory">Saree</span></td>
+                  <td><span class="productPrice">9788</span></td>
+                  <td><span class="editProduct">Edit </span></td>
+                  <td><span class="removeProduct">Remove</span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="https://i.etsystatic.com/21184941/c/1145/910/0/9/il/2d7e63/4661646365/il_680x540.4661646365_2iz8.jpg"
+                      class="pro-img"
+                    />
+                  </td>
+                  <td>1</td>
+                  <td style="max-width: 250px">
+                    Exclusive Bollywood Designer color Saree
+                  </td>
+                  <td><span class="productCategory">Saree</span></td>
+                  <td><span class="productPrice">9788</span></td>
+                  <td><span class="editProduct">Edit </span></td>
+                  <td><span class="removeProduct">Remove</span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="https://i.etsystatic.com/21184941/c/1145/910/0/9/il/2d7e63/4661646365/il_680x540.4661646365_2iz8.jpg"
+                      class="pro-img"
+                    />
+                  </td>
+                  <td>1</td>
+                  <td style="max-width: 250px">
+                    Exclusive Bollywood Designer color Saree
+                  </td>
+                  <td><span class="productCategory">Saree</span></td>
+                  <td><span class="productPrice">9788</span></td>
+                  <td><span class="editProduct">Edit </span></td>
+                  <td><span class="removeProduct">Remove</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div id="showHide">
+          <div id="formBox">
+            <div id="xmark"><div>x</div></div>
+            <div>
+              <h2 class="add_heading">Product Details</h2>
+            </div>
+
+            <form id="addProductForm" action="">
+              <div>
+                <label for=""> Title of Product: </label>
+                <input id="newProducttitle" required type="text" />
+              </div>
+              <div class="cat_price">
+                <div>
+                  <label for=""> Category: </label>
+                  <input id="newProductcat" required type="text" />
+                </div>
+                <div>
+                  <label for=""> Price: </label>
+                  <input id="newProductprice" required type="number" />
+                </div>
+              </div>
+              <div>
+                <label for=""> Main Image URL: </label>
+                <input required id="mainImage" type="text" />
+              </div>
+              <div>
+                <label for=""> Second Image URL: </label>
+                <input required id="image1" type="text" />
+              </div>
+              <div>
+                <label for=""> Third Image URL: </label>
+                <input required id="image2" type="text" />
+              </div>
+              <div>
+                <label for=""> Fourth Image URL: </label>
+                <input required id="image3" type="text" />
+              </div>
+              <div>
+                <label for=""> Description of Product: </label>
+                <input id="newProductdes" type="text" />
+              </div>
+              <div><input type="submit" value="Add Product" /></div>
+            </form>
+          </div>
+        </div>
+        <!-- 
+
+
+
+
+
+
+
+  
+ -->
+
+        <div id="showHide" class="showHide2">
+          <div id="formBox" class="formBox2">
+            <div class="xmark2" id="xmark"><div>x</div></div>
+            <div>
+              <h2 class="add_heading">Product Details</h2>
+            </div>
+
+            <form id="addProductForm" action="">
+              <div>
+                <label for=""> Title of Product: </label>
+                <input id="newProducttitle" required type="text" />
+              </div>
+              <div class="cat_price">
+                <div>
+                  <label for=""> Category: </label>
+                  <input id="newProductcat" required type="text" />
+                </div>
+                <div>
+                  <label for=""> Price: </label>
+                  <input id="newProductprice" required type="number" />
+                </div>
+              </div>
+              <div>
+                <label for=""> Main Image URL: </label>
+                <input required id="mainImage" type="text" />
+              </div>
+              <div>
+                <label for=""> Second Image URL: </label>
+                <input required id="image1" type="text" />
+              </div>
+              <div>
+                <label for=""> Third Image URL: </label>
+                <input required id="image2" type="text" />
+              </div>
+              <div>
+                <label for=""> Fourth Image URL: </label>
+                <input required id="image3" type="text" />
+              </div>
+              <div>
+                <label for=""> Description of Product: </label>
+                <input id="newProductdes" type="text" />
+              </div>
+              <div><input type="submit" value="Edit Product" /></div>
+            </form>
+          </div>
+        </div>
+
+        <!-- 
+
+
+
+
+
+
+
+
+  
+  -->
+      </div>
+    </div>
+  </body>
+  <script src="./script/adminProduct.js"></script>
+  <script src="script/dashbord.js"></script>
+  <!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/cart.css">
+    <link rel="stylesheet" href="./css/address.css">
+    <link rel="stylesheet" href="./css/payment.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.7/dist/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.7/dist/sweetalert2.min.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="div1">
+            <img src="./LOGO/ace_fashion_logo-removebg-preview.png" alt="Brand Logo" id="brandlogo">
+        </div>
+
+        <div id="div2">
+            <div><a id="bag" href="./cart.html">BAG</a></div>
+            <div><a id="address" href="#">ADDRESS</a></div>
+            <div><a id="payment" href="#">PAYMENT</a></div>
+        </div>
+
+        <div id="div3">
+            <img src="./LOGO/secure logo.png" alt="securelogo" id="securelogo">
+            <p id="securetext">100% SECURE</p>
+        </div>
+
+    </nav>
+
+    
+
+     <!---------------------- bill div------------- -->
+
+     <div id="subtotalcontaineraddrs">
+        
+        <p id="line5">PRICE DETAILS (<span>1 Item</span>) </p>
+        <div id="line6_Billdiv">
+            <div id="line7">
+                <div>Total MRP</div>
+                <div>₹699</div>
+            </div>
+            <div>
+                <div>Discount On MRP</div>
+                <div>₹99</div>
+            </div>
+            
+            <div>
+                <div>Coupon Discount</div>
+                <div id="applycoupon">Apply Coupon</div>
+            </div>
+            <div>
+                <div>Delivery Chages</div>
+                <div id="free"><del style="text-align: line-through;  color: rgb(83, 83, 83);">₹49 </del>FREE</div>
+            </div>
+
+        </div>
+        <div id="totalamount">
+            <div>Total Amount</div>
+            <div>₹600</div>
+
+        </div>
+       
+    </div>
+
+    <!-- ------------------payment page----------------- -->
+    <div id="mainpaymentDiv">
+        <div id="firstDiv">
+            <div id="innerDiv">
+                <img id="bankOfferimg" src="./LOGO/bankoffer.png" alt="Bank offer">
+                <h4>Bank Offer</h4>
+            </div>
+            <p>10% Instant Discount on YES Bank Credit Card on a min spend of Rs 3,000. TCA</p>           
+        </div>
+
+        <h3 id="choosepmtmode">CHOOSE PAYMENT MODE</h3>
+        <div id="secDiv">
+            <div id="paymentMode">
+                <div onclick="showPage('mode1')">
+                    <img src="./LOGO/cod.png" alt="">
+                    <p>Cash On Delivery</p>
+                </div>
+
+                <div onclick="showPage('mode2')">
+                    <img src="./LOGO/creditcard.png" alt="">
+                    <p>Credit/Debit Card</p>
+                </div>
+
+                <div onclick="showPage('mode3')">
+                    <img src="./LOGO/upi.png" alt="">
+                    <p>PhonePe/Google Pay/BHIM UPI</p>
+                </div>
+
+                <div onclick="showPage('mode4')">
+                    <img src="./LOGO/wallet.png" alt="">
+                    <p>Paytm/Wallets</p>
+                </div>
+
+                <div onclick="showPage('mode5')"  >
+                    <img src="./LOGO/banking.png" alt="">
+                    <p>Net Banking</p>
+                </div>
+                
+
+            </div>
+
+            <div id="content">
+                <div class="mode active" id="mode1">
+
+                    <h3 id="codheading">Cash On Delivery (Cash/UPI)</h3>
+                    <div id="captchacontainer">
+                        <!-- <div id="captcha"></div> 
+                        -->
+                        <canvas id="captcha-canvas"></canvas>
+                        <img id="refreshimg" src="./LOGO/refershicon.png" alt="">
+                    </div>
+
+                    <div>
+                        <input type="text" placeholder="Enter the code shown in the above" id="otpInput">
+                    </div>
+                    <p >You can pay via Cash/UPI on delivery</p>
+                    <button id="placeOrder">
+                        PLACE ORDER
+                    </button>
+
+                </div>
+
+                <div class="mode" id="mode2">
+                    <h1>Credit/Debit Card</h1>
+                </div>
+
+                <div  class="mode" id="mode3">
+                    <h1>PhonePe/Google Pay/BHIM UPI</h1>
+                </div>
+
+                <div  class="mode" id="mode4">
+                    <h1>Paytm/Wallets</h1>
+                </div>
+
+                <div class="mode" id="mode5">
+                    <h1>Net Banking</h1>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="thirddiv">
+            
+                <div id="giftcontainer">
+                    <img id="giftcard" src="./LOGO/giftbox.jpg" alt="">
+                    <p id="p" >Have a Gift Card?</p>
+                </div>
+
+               <div id="giftLine">
+                <a  href="">APPLY GIFT CARD</a>
+               </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="allcards">
+        <div id="cardcontainer">
+            <div><img src="./LOGO/256bit.png" alt=""></div>
+            <div><img src="./LOGO/bluecard.png" alt=""></div>
+            <div><img src="./LOGO/bhim.png" alt=""></div>
+            <div><img src="./LOGO/cashdel.png" alt=""></div>
+            <div><img src="./LOGO/mastercard.png" alt=""></div>
+            <div><img src="./LOGO/netbanking.png" alt=""></div>
+            <div><img src="./LOGO/paypal.png" alt=""></div>
+            <div><img src="./LOGO/rupay.png" alt=""></div>
+            <div><img src="./LOGO/visa.png" alt=""></div>
+            
+        </div>
+
+        <div id="needhelp">Need Help? Contact Us</div>
+    </div>
+
+
+    <script src="./scripts/payment.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>ACE Fashion</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="nav">
+        <div class="logo">
+          <img src="images/logo.jpeg" class="brand-logo" alt="" />
+          <span>ACE Fashion</span>
+        </div>
+        <div class="search">
+          <input
+            type="text"
+            class="search-box"
+            placeholder="search brand, product"
+          />
+          <button class="search-btn">search</button>
+        </div>
+        <div class="nav-items">
+          <a href="newsignin.html"
+            ><i class="fa-solid fa-user-plus"
+              ><span> SignIn/Register</span></i
+            ></a
+          >
+          <a href="" id="logoutbtn"
+            ><i class="fa-solid fa-right-from-bracket"
+              ><span>Logout</span></i
+            ></a
+          >
+          <a href="./ACE FASHION/newCart.html">
+            <i class="fa-solid fa-cart-shopping"><span> Cart</span></i></a
+          >
+        </div>
+      </div>
+
+      <!-- //// -->
+      <ul class="links-container">
+        <li class="link-item">
+          <a href="#" id="fashion" class="link">Fashion</a>
+        </li>
+        <li class="link-item">
+          <a href="#" id="beauty" class="link">Beauty & Personal care</a>
+        </li>
+        <li class="link-item">
+          <a href="#" id="home" class="link">Home decor</a>
+        </li>
+        <li class="link-item">
+          <a href="#" id="productsnearme" class="link">Products near me</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- ///// -->
+    <!-- slider 1 starts here -->
+    <div class="slider-one">
+      <div class="slides-one">
+        <!-- radio buttons -->
+        <input type="radio" checked name="radio-btn" id="radio1" />
+        <input type="radio" name="radio-btn" id="radio2" />
+        <input type="radio" name="radio-btn" id="radio3" />
+        <input type="radio" name="radio-btn" id="radio4" />
+
+        <div class="slide-first">
+          <img
+            id="images"
+            src="https://cdn.plotch.io/image/upload/C/V/1671110178_SG9tZWRlY29yLnBuZw==.png"
+            alt=""
+          />
+        </div>
+        <div class="slide-first">
+          <img
+            src="https://cdn.plotch.io/image/upload/C/V/1676286917_Q1JBRlRTVklMTEEyLU5FV0hFUk9CQU5ORVJTLnBuZw==.png"
+            alt=""
+          />
+        </div>
+        <div class="slide-first">
+          <img
+            src="https://cdn.plotch.io/image/upload/C/V/1671110161_Mi5wbmc=.png"
+            alt=""
+          />
+        </div>
+        <div class="slide-first">
+          <img
+            src="https://cdn.plotch.io/image/upload/C/V/1676097252_Q1JBRlRTVklMTEEyLU5FV0hFUk9CQU5ORVJTLnBuZw==.png"
+            alt=""
+          />
+        </div>
+
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+      </div>
+
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+    </div>
+
+    <div class="tape">
+      <!-- <img src="" alt="">
+            <h2>ON TIME</h2>
+            <p>delivery</p> -->
+      <div class="tape">
+        <div id="widges_img" class="widgets-box">
+          <img
+            class="img-responsive img-page-responsive display-desktop-image"
+            src="https://cdn.plotch.io/image/upload/C/V/1660916598_MS5wbmc=.png"
+            alt=""
+            style="cursor: default; pointer-events: none"
+            title=""
+          />
+          <img
+            class="img-responsive img-page-responsive display-desktop-image"
+            src="https://cdn.plotch.io/image/upload/C/V/1660916607_Mi5wbmc=.png"
+            alt=""
+            style="cursor: default; pointer-events: none"
+            title=""
+          />
+          <img
+            class="img-responsive img-page-responsive display-desktop-image"
+            src="https://cdn.plotch.io/image/upload/C/V/1660916612_My5wbmc=.png"
+            alt=""
+            style="cursor: default; pointer-events: none"
+            title=""
+          />
+          <img
+            class="img-responsive img-page-responsive display-desktop-image"
+            src="https://cdn.plotch.io/image/upload/C/V/1660916617_NC5wbmc=.png"
+            alt=""
+            style="cursor: default; pointer-events: none"
+            title=""
+          />
+          <img
+            class="img-responsive img-page-responsive display-desktop-image"
+            src="https://cdn.plotch.io/image/upload/C/V/1660916629_NS5wbmc=.png"
+            alt=""
+            style="cursor: default; pointer-events: none"
+            title=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      let arr = [
+        "https://cdn.plotch.io/image/upload/C/V/1671110178_SG9tZWRlY29yLnBuZw==.png",
+        "https://cdn.plotch.io/image/upload/C/V/1676286917_Q1JBRlRTVklMTEEyLU5FV0hFUk9CQU5ORVJTLnBuZw==.png",
+        "https://cdn.plotch.io/image/upload/C/V/1671110161_Mi5wbmc=.png",
+        "https://cdn.plotch.io/image/upload/C/V/1676097252_Q1JBRlRTVklMTEEyLU5FV0hFUk9CQU5ORVJTLnBuZw==.png",
+      ];
+      let image = document.getElementById("images");
+      var counter = 2;
+      setInterval(function () {
+        document.getElementById("radio" + counter).checked = true;
+        image.setAttribute("src", arr[counter - 1]);
+        counter++;
+        if (counter > 4) {
+          counter = 1;
+        }
+      }, 3000);
+    </script>
+
+    <div class="horizontal">
+      <h2>Shop By Category</h2>
+    </div>
+
+    <!-- next slider -->
+
+    <div id="slider-container" class="slider">
+      <div class="slide">
+        <img
+          src="https://cdn.plotch.io/image/upload/C/V/1676285382_MS5wbmc=.png"
+          alt=""
+        />
+      </div>
+      <div class="slide">
+        <img
+          src="https://cdn.plotch.io/image/upload/C/V/1676285387_Mi5wbmc=.png"
+          alt=""
+        />
+      </div>
+      <div class="slide">
+        <img
+          src="https://cdn.plotch.io/image/upload/C/V/1676285392_My5wbmc=.png"
+          alt=""
+        />
+      </div>
+      <div class="slide">
+        <img
+          src="https://cdn.plotch.io/image/upload/C/V/1676285398_NC5wbmc=.png"
+          alt=""
+        />
+      </div>
+      <div class="slide">
+        <img
+          src="https://cdn.plotch.io/image/upload/C/V/1676285404_NS5wbmc=.png"
+          alt=""
+        />
+      </div>
+      <div class="slide">
+        <img
+          src="https://cdn.plotch.io/image/upload/C/V/1676285414_Ny5wbmc=.png"
+          alt=""
+        />
+      </div>
+      <div class="slide">
+        <img
+          src="https://cdn.plotch.io/image/upload/C/V/1676285421_OC5wbmc=.png"
+          alt=""
+        />
+      </div>
+      <div class="slide">
+        <img
+          src="https://cdn.plotch.io/image/upload/C/V/1676285392_My5wbmc=.png"
+          alt=""
+        />
+      </div>
+      <div class="slide">
+        <img
+          src="https://cdn.plotch.io/image/upload/C/V/1676285398_NC5wbmc=.png"
+          alt=""
+        />
+      </div>
+      <div class="slide">
+        <img
+          src="https://cdn.plotch.io/image/upload/C/V/1676285404_NS5wbmc=.png"
+          alt=""
+        />
+      </div>
+      <div class="slide">
+        <img
+          src="https://cdn.plotch.io/image/upload/C/V/1676285414_Ny5wbmc=.png"
+          alt=""
+        />
+      </div>
+      <div class="slide">
+        <img
+          src="https://cdn.plotch.io/image/upload/C/V/1676285421_OC5wbmc=.png"
+          alt=""
+        />
+      </div>
+      <div class="slide">
+        <img
+          src="https://cdn.plotch.io/image/upload/C/V/1676285392_My5wbmc=.png"
+          alt=""
+        />
+      </div>
+      <div class="slide">
+        <img
+          src="https://cdn.plotch.io/image/upload/C/V/1676285382_MS5wbmc=.png"
+          alt=""
+        />
+      </div>
+      <div class="slide">
+        <img
+          src="https://cdn.plotch.io/image/upload/C/V/1676285387_Mi5wbmc=.png"
+          alt=""
+        />
+      </div>
+      <div class="slide">
+        <img
+          src="https://cdn.plotch.io/image/upload/C/V/1676285392_My5wbmc=.png"
+          alt=""
+        />
+      </div>
+      <div class="slide">
+        <img
+          src="https://cdn.plotch.io/image/upload/C/V/1676285398_NC5wbmc=.png"
+          alt=""
+        />
+      </div>
+      <div class="slide">
+        <img
+          src="https://cdn.plotch.io/image/upload/C/V/1676285404_NS5wbmc=.png"
+          alt=""
+        />
+      </div>
+      <div class="slide">
+        <img
+          src="https://cdn.plotch.io/image/upload/C/V/1676285414_Ny5wbmc=.png"
+          alt=""
+        />
+      </div>
+      <div class="slide">
+        <img
+          src="https://cdn.plotch.io/image/upload/C/V/1676285421_OC5wbmc=.png"
+          alt=""
+        />
+      </div>
+      <div class="slide">
+        <img
+          src="https://cdn.plotch.io/image/upload/C/V/1676285392_My5wbmc=.png"
+          alt=""
+        />
+      </div>
+      <div class="slide">
+        <img
+          src="https://cdn.plotch.io/image/upload/C/V/1676285398_NC5wbmc=.png"
+          alt=""
+        />
+      </div>
+      <div class="slide">
+        <img
+          src="https://cdn.plotch.io/image/upload/C/V/1676285404_NS5wbmc=.png"
+          alt=""
+        />
+      </div>
+      <div class="slide">
+        <img
+          src="https://cdn.plotch.io/image/upload/C/V/1676285414_Ny5wbmc=.png"
+          alt=""
+        />
+      </div>
+      <div class="slide">
+        <img
+          src="https://cdn.plotch.io/image/upload/C/V/1676285421_OC5wbmc=.png"
+          alt=""
+        />
+      </div>
+      <div class="slide">
+        <img
+          src="https://cdn.plotch.io/image/upload/C/V/1676285392_My5wbmc=.png"
+          alt=""
+        />
+      </div>
+      <div onclick="prev()" class="control-prev-btn">
+        <i class="fas fa-arrow-left"></i>
+      </div>
+      <div onclick="next()" class="control-next-btn">
+        <i class="fas fa-arrow-right"></i>
+      </div>
+    </div>
+
+    <div class="overlay"></div>
+
+    <!-- END slider-wrapper -->
+
+    <!-- gallery -->
+    <div class="container">
+      <div class="gallery">
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="https://cdn.plotch.io/image/upload/C/V/1671110234_SG9tZWRlY29yLnBuZw==.png"
+            alt=""
+          />
+        </div>
+
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="https://cdn.plotch.io/image/upload/C/V/1671110241_NS5wbmc=.png"
+            alt=""
+            title=""
+          />
+        </div>
+
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="https://cdn.plotch.io/image/upload/C/V/1671110248_Ni5wbmc=.png"
+            alt=""
+            title=""
+          />
+        </div>
+
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="https://cdn.plotch.io/image/upload/C/V/1671110264_My5wbmc=.png"
+            alt=""
+            title=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+
+    <!-- footer section start -->
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <a href="index.html"
+              ><img
+                id="footer-logo"
+                src="images/surajlogo.png"
+                alt=""
+                class="img-fluid logo-footer"
+            /></a>
+            <div class="footer-about">
+              <p>
+                India's most convenient online grocery channel Buyerapp Fresh
+                and Smart makes your grocery shopping even simpler. No more
+                hassles of sweating it out in crowded markets, grocery shops &
+                supermarkets - now shop from the comfort of your home; office,
+                or on the move. We offer you the convenience of shopping for
+                everything that you need for your home - be it fresh fruits &
+                vegetables, rice, dals, oil, packaged food, dairy item, frozen,
+                pet food, household cleaning items & personal care products from
+                a single virtual store.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="useful-link">
+              <h2>Useful Links</h2>
+              <img
+                src="./assets/images/about/home_line.png"
+                alt=""
+                class="img-fluid"
+              />
+              <div class="use-links">
+                <li>
+                  <a href="index.html"
+                    ><i class="fa-solid fa-angles-right"></i> Home</a
+                  >
+                </li>
+                <li>
+                  <a href="about.html"
+                    ><i class="fa-solid fa-angles-right"></i> About Us</a
+                  >
+                </li>
+                <li>
+                  <a href="gallery.html"
+                    ><i class="fa-solid fa-angles-right"></i> Gallery</a
+                  >
+                </li>
+                <li>
+                  <a href="contact.html"
+                    ><i class="fa-solid fa-angles-right"></i> Contact</a
+                  >
+                </li>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="social-links">
+              <h2>Follow Us</h2>
+              <img src="./assets/images/about/home_line.png" alt="" />
+              <div class="social-icons">
+                <li>
+                  <a href=""
+                    ><i class="fa-brands fa-facebook-f"></i> Facebook</a
+                  >
+                </li>
+                <li>
+                  <a href=""
+                    ><i class="fa-brands fa-instagram"></i> Instagram</a
+                  >
+                </li>
+                <li>
+                  <a href=""
+                    ><i class="fa-brands fa-linkedin-in"></i> Linkedin</a
+                  >
+                </li>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="address">
+              <h2>Address</h2>
+              <img
+                src="./assets/images/about/home_line.png"
+                alt=""
+                class="img-fluid"
+              />
+              <div class="address-links">
+                <li class="address1">
+                  <i class="fa-solid fa-location-dot"></i> Alexa Brindlam-
+                  cizwazram Dt Mumbai 682201
+                </li>
+                <li>
+                  <a href=""
+                    ><i class="fa-solid fa-phone"></i> +91 9045658455</a
+                  >
+                </li>
+                <li>
+                  <a href=""
+                    ><i class="fa-solid fa-envelope"></i> mail@asefashion.com</a
+                  >
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer section end -->
+    <!-- footer copy right section start -->
+    <section id="copy-right">
+      <div class="copy-right-sec">
+        <i class="fa-solid fa-copyright"></i> For Help, send an email to
+        customercare@acefashion.com <a href="#"> ACE Fashion</a>
+      </div>
+    </section>
+    <!-- footer copy right section end -->
+
+    <script src="script.js"></script>
+  </body>
+  <script src="./ACE FASHION/scripts/index.js"></script>
+</html>

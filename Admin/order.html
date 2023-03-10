@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ace Fashion/admin</title>
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style/order.css" />
+    <link rel="stylesheet" href="style/dashbord.css" />
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navigation">
+        <ul>
+          <a href="dashboard.html">
+            <li>
+              <span class="icon"> <i class="fa fa-dashboard icons"></i></span>
+              <span class="title"><h2>Ace Fashion</h2></span>
+            </li>
+          </a>
+          <a href="dashboard.html">
+            <li>
+              <span class="icon"> <i class="fa fa-dashboard icons"></i></span>
+              <span class="title">Dashboard</span>
+            </li>
+          </a>
+          <a href="customers.html">
+            <li>
+              <span class="icon"> <i class="fa fa-users icons"></i></span>
+              <span class="title">Custmores</span>
+            </li>
+          </a>
+          <a href="products.html">
+            <li>
+              <span class="icon"><i class="fa fa-list icons"></i></span>
+              <span class="title">Products</span>
+            </li>
+          </a>
+          <a href="order.html">
+            <li>
+              <span class="icon">
+                <i class="fa fa-shopping-bag icons"></i
+              ></span>
+              <span class="title">Orders</span>
+            </li>
+          </a>
+          <a href="/ACE FASHION/index.html">
+            <li>
+              <span class="icon">
+                <i class="fa-solid fa-right-to-bracket"></i
+              ></span>
+              <span class="title">Logout</span>
+            </li>
+          </a>
+        </ul>
+      </div>
+      <div class="main">
+        <div class="topbar">
+          <div class="toggle">☰</div>
+          <h1>Orders</h1>
+          <div class="search">
+            <label
+              ><input
+                type="text"
+                placeholder="Search here"
+                name=""
+                id="searchProduct" />
+              <i id="searchbtn" class="fa-solid fa-magnifying-glass"></i
+            ></label>
+          </div>
+          <div class="user">
+            <img
+              src="https://media.geeksforgeeks.org/wp-content/uploads/20221210180014/profile-removebg-preview.png"
+              class="pro-img"
+            />
+          </div>
+        </div>
+        <div class="filter_sort">
+          <div>
+            <select name="" id="sortByprice">
+              <option value="">Sort By Price</option>
+              <option value="asc">Ascending</option>
+              <option value="desc">Descending</option>
+            </select>
+          </div>
+          <div>
+            <select name="" id="sortByPay">
+              <option value="">Sort By Total</option>
+              <option value="asc">Ascending</option>
+              <option value="desc">Descending</option>
+            </select>
+          </div>
+          <div>
+            <select name="" id="filerByStatus">
+              <option value="">Filter By Status</option>
+              <option value="pending">Pending</option>
+              <option value="delivered">Delivered</option>
+              <option value="canceled">Canceled</option>
+              <option value="return">Returned</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="ordersDetails">
+          <div class="ordersBox">
+            <table>
+              <thead>
+                <tr>
+                  <td>Image</td>
+                  <td>Title</td>
+                  <td>Category</td>
+                  <td>Price</td>
+                  <td>Quantity</td>
+                  <td>Total</td>
+                  <td>Status</td>
+                  <td>Edit</td>
+
+                  <td></td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <img
+                      src="https://i.etsystatic.com/21184941/c/1145/910/0/9/il/2d7e63/4661646365/il_680x540.4661646365_2iz8.jpg"
+                      class="pro-img"
+                    />
+                  </td>
+
+                  <td style="max-width: 250px">
+                    Exclusive Bollywood Designer color Saree
+                  </td>
+
+                  <td><span class="productCategory">Saree</span></td>
+                  <td>9788</td>
+                  <td><span class="productPrice">1</span></td>
+                  <td><span class="totalPrice">9788</span></td>
+                  <td><span class="status delivered">Delivered </span></td>
+                  <td>
+                    <span class="editstatus"
+                      ><select name="" id="">
+                        <option value="">Edit Status</option>
+                        <option value="pending">Pending</option>
+                        <option value="delivered">Delivered</option>
+                        <option value="cancled">Cancled</option>
+                      </select>
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="https://i.etsystatic.com/21184941/c/1145/910/0/9/il/2d7e63/4661646365/il_680x540.4661646365_2iz8.jpg"
+                      class="pro-img"
+                    />
+                  </td>
+
+                  <td style="max-width: 250px">
+                    Exclusive Bollywood Designer color Saree
+                  </td>
+
+                  <td><span class="productCategory">Saree</span></td>
+                  <td>9788</td>
+                  <td><span class="productPrice">1</span></td>
+                  <td><span class="totalPrice">9788</span></td>
+                  <td><span class="status delivered">Delivered </span></td>
+                  <td>
+                    <span class="editstatus"
+                      ><select name="" id="">
+                        <option value="">Edit Status</option>
+                        <option value="pending">Pending</option>
+                        <option value="delivered">Delivered</option>
+                        <option value="cancled">Cancled</option>
+                      </select>
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="https://i.etsystatic.com/21184941/c/1145/910/0/9/il/2d7e63/4661646365/il_680x540.4661646365_2iz8.jpg"
+                      class="pro-img"
+                    />
+                  </td>
+
+                  <td style="max-width: 250px">
+                    Exclusive Bollywood Designer color Saree
+                  </td>
+
+                  <td><span class="productCategory">Saree</span></td>
+                  <td>9788</td>
+                  <td><span class="productPrice">1</span></td>
+                  <td><span class="totalPrice">9788</span></td>
+                  <td><span class="status delivered">Delivered </span></td>
+                  <td>
+                    <span class="editstatus"
+                      ><select name="" id="">
+                        <option value="">Edit Status</option>
+                        <option value="pending">Pending</option>
+                        <option value="delivered">Delivered</option>
+                        <option value="cancled">Cancled</option>
+                      </select>
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="https://i.etsystatic.com/21184941/c/1145/910/0/9/il/2d7e63/4661646365/il_680x540.4661646365_2iz8.jpg"
+                      class="pro-img"
+                    />
+                  </td>
+
+                  <td style="max-width: 250px">
+                    Exclusive Bollywood Designer color Saree
+                  </td>
+
+                  <td><span class="productCategory">Saree</span></td>
+                  <td>9788</td>
+                  <td><span class="productPrice">1</span></td>
+                  <td><span class="totalPrice">9788</span></td>
+                  <td><span class="status delivered">Delivered </span></td>
+                  <td>
+                    <span class="editstatus"
+                      ><select name="" id="">
+                        <option value="">Edit Status</option>
+                        <option value="pending">Pending</option>
+                        <option value="delivered">Delivered</option>
+                        <option value="cancled">Cancled</option>
+                      </select>
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="https://i.etsystatic.com/21184941/c/1145/910/0/9/il/2d7e63/4661646365/il_680x540.4661646365_2iz8.jpg"
+                      class="pro-img"
+                    />
+                  </td>
+
+                  <td style="max-width: 250px">
+                    Exclusive Bollywood Designer color Saree
+                  </td>
+
+                  <td><span class="productCategory">Saree</span></td>
+                  <td>9788</td>
+                  <td><span class="productPrice">1</span></td>
+                  <td><span class="totalPrice">9788</span></td>
+                  <td><span class="status delivered">Delivered </span></td>
+                  <td>
+                    <span class="editstatus"
+                      ><select name="" id="">
+                        <option value="">Edit Status</option>
+                        <option value="pending">Pending</option>
+                        <option value="delivered">Delivered</option>
+                        <option value="cancled">Cancled</option>
+                      </select>
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="https://i.etsystatic.com/21184941/c/1145/910/0/9/il/2d7e63/4661646365/il_680x540.4661646365_2iz8.jpg"
+                      class="pro-img"
+                    />
+                  </td>
+
+                  <td style="max-width: 250px">
+                    Exclusive Bollywood Designer color Saree
+                  </td>
+
+                  <td><span class="productCategory">Saree</span></td>
+                  <td>9788</td>
+                  <td><span class="productPrice">1</span></td>
+                  <td><span class="totalPrice">9788</span></td>
+                  <td><span class="status delivered">Delivered </span></td>
+                  <td>
+                    <span class="editstatus"
+                      ><select name="" id="">
+                        <option value="">Edit Status</option>
+                        <option value="pending">Pending</option>
+                        <option value="delivered">Delivered</option>
+                        <option value="cancled">Cancled</option>
+                      </select>
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="https://i.etsystatic.com/21184941/c/1145/910/0/9/il/2d7e63/4661646365/il_680x540.4661646365_2iz8.jpg"
+                      class="pro-img"
+                    />
+                  </td>
+
+                  <td style="max-width: 250px">
+                    Exclusive Bollywood Designer color Saree
+                  </td>
+
+                  <td><span class="productCategory">Saree</span></td>
+                  <td>9788</td>
+                  <td><span class="productPrice">1</span></td>
+                  <td><span class="totalPrice">9788</span></td>
+                  <td><span class="status delivered">Delivered </span></td>
+                  <td>
+                    <span class="editstatus"
+                      ><select name="" id="">
+                        <option value="">Edit Status</option>
+                        <option value="pending">Pending</option>
+                        <option value="delivered">Delivered</option>
+                        <option value="cancled">Cancled</option>
+                      </select>
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="script/dashbord.js"></script>
+  <script src="script/adminOrder.js"></script>
+</html>

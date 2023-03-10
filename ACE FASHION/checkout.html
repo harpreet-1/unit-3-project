@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CapturePoint Checkout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="checkout.css" />
+    <!-- <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="global.css" />
+     -->
+    <!-- <script src="/js/home.js"></script> -->
+    <link rel="stylesheet" href="newcart.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <div id="div1">
+          <img
+            src="./LOGO/ace_fashion_logo-removebg-preview.png"
+            alt="Brand Logo"
+            id="brandlogo"
+          />
+        </div>
+
+        <div id="div2">
+          <div><a id="bag" href="#">BAG</a></div>
+          <div><a id="address" href="#">ADDRESS</a></div>
+          <div><a id="payment" href="#">PAYMENT</a></div>
+        </div>
+
+        <div id="div3">
+          <img src="./LOGO/secure logo.png" alt="securelogo" id="securelogo" />
+          <p id="securetext">100% SECURE</p>
+        </div>
+      </nav>
+    </header>
+    <section class="main">
+      <div class="left">
+        <h3>Shipping Address</h3>
+        <form>
+          <div class="addrex_form">
+            <div class="name_surname">
+              <div>
+                <label for="">*First Name :</label>
+                <input
+                  required
+                  type="text"
+                  placeholder="First Name"
+                  class="name"
+                />
+              </div>
+              <div>
+                <label for="">Last Name : </label>
+                <input type="text" placeholder="Last Name" class="" />
+              </div>
+            </div>
+            <label for="">*Address :</label>
+            <input type="text" required placeholder="Street Address" />
+            <label for="">Apt/Suite/Floor</label>
+            <input type="text" placeholder="Apt/Suite/Floor" />
+            <div class="city">
+              <div>
+                <label for="">*City</label>
+                <input type="text" placeholder="City" />
+              </div>
+              <div>
+                <div>
+                  <label for="">*Region :</label>
+                  <input required type="text" />
+                </div>
+                <div>
+                  <label for="">*Postal Code :</label>
+                  <input required type="text" />
+                </div>
+              </div>
+            </div>
+            <div class="email_number">
+              <div>
+                <label for="">Email Address :</label>
+                <input type="email" placeholder="Email" />
+              </div>
+              <div>
+                <label for="">*Mobile Number :</label>
+                <input required type="numbers" placeholder="Number" />
+              </div>
+            </div>
+          </div>
+          <!-- </form> -->
+
+          <section class="payment_box">
+            <header><h3>Payment</h3></header>
+
+            <!-- <form> -->
+            <div class="payment_form">
+              <div>
+                <label>*Card :</label>
+                <input type="number" required placeholder="Card Number" />
+              </div>
+              <div>
+                <label>*MM :</label>
+                <input required type="number" placeholder="MM" />
+              </div>
+              <div>
+                <label>*YY :</label>
+                <input required type="number" placeholder="YY" />
+              </div>
+              <div>
+                <label>*CVV :</label>
+                <input required type="number" placeholder="CVV" />
+              </div>
+
+              <input type="submit" value="Place Order" />
+              <!-- </form> -->
+            </div>
+          </section>
+        </form>
+      </div>
+      <div class="right">
+        <header><h2>Cart Summary</h2></header>
+        <div class="total_details">
+          <div class="subtotal">
+            <div><p>Subtotal</p></div>
+            <div class="subtotal_element">
+              <span>₹</span> <span id="sub_total">6554</span>
+            </div>
+          </div>
+          <p>Sipping</p>
+          <div class="charge">UPS Worldwide Express<span>₹64</span></div>
+          <div class="taxes">
+            <div>Taxes</div>
+            <div>₹0</div>
+          </div>
+          <div id="order_total" class="order_total">
+            <div><h3>Order Total</h3></div>
+            <div>
+              <span><h3 id="dollor" class="dollor">₹</h3></span>
+              <h3 id="total_order_element" class="total_order_element">767</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="/index.html"></script>
+    <script>
+      let total_order_element = document.getElementById("total_order_element");
+      let sub_total = document.getElementById("sub_total");
+
+      let total = JSON.parse(localStorage.getItem("total"));
+      sub_total.innerText = (total - 64).toFixed(2);
+      total_order_element.innerText = total;
+      let form = document.querySelector("form");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        localStorage.removeItem("cart");
+        localStorage.removeItem("cart_items");
+        localStorage.removeItem("total");
+        alert("Payment suscessful");
+        window.location.href = "/index.html";
+      });
+    </script>
+  </body>
+</html>

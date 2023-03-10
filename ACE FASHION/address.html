@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/cart.css">
+    <link rel="stylesheet" href="./css/address.css">
+</head>
+<!-----------------------body -->
+<body>
+    <nav id="navbar">
+        <div id="div1">
+            <img src="./LOGO/ace_fashion_logo-removebg-preview.png" alt="Brand Logo" id="brandlogo">
+        </div>
+
+        <div id="div2">
+            <div><a id="bag" href="./cart.html">BAG</a></div>
+            <div><a id="address" href="#">ADDRESS</a></div>
+            <div><a id="payment" href="#">PAYMENT</a></div>
+
+        </div>
+
+        <div id="div3">
+            <img src="./LOGO/secure logo.png" alt="securelogo" id="securelogo">
+            <p id="securetext">100% SECURE</p>
+        </div>
+
+    </nav>
+
+    <!-- bill div------------- -->
+
+    <div id="subtotalcontaineraddrs">
+        
+        <p id="line5">PRICE DETAILS (<span>1 Item</span>) </p>
+        <div id="line6_Billdiv">
+            <div id="line7">
+                <div>Total MRP</div>
+                <div>₹699</div>
+            </div>
+            <div>
+                <div>Discount On MRP</div>
+                <div>₹99</div>
+            </div>
+            
+            <div>
+                <div>Coupon Discount</div>
+                <div id="applycoupon">Apply Coupon</div>
+            </div>
+            <div>
+                <div>Delivery Chages</div>
+                <div id="free"><del style="text-align: line-through;  color: rgb(83, 83, 83);">₹49 </del>FREE</div>
+            </div>
+
+        </div>
+        <div id="totalamount">
+            <div>Total Amount</div>
+            <div>₹600</div>
+
+        </div>
+       
+    </div>
+
+    <!-- address div-------------- -->
+    <div id="addressDiv">
+        <p class="heading">CONTACT DETAILS</p>
+
+        <div><input id="contactmob" class="name" type="text" placeholder="Name"></div>
+        
+        <div><input id="contactmob" class="mobile" type="number" placeholder="Mobile No"></div>
+
+        <p class="heading" id="head2">ADDRESS</p>
+        <div><input id="pincode" class="underaddress" type="number" placeholder="Pin Code"></div>
+
+        <!-- <div><input id="address" class="underaddress" type="text" placeholder="Address(House No,Building,Street,Area)"></div> -->
+
+        <div><input id="Locality" class="underaddress"  placeholder="Locality/Town"></div>
+
+        <div id="citystate">
+            <div><input id="city" type="text" placeholder="City/District"></div>
+            <div><input id="state" type="text" placeholder="State"></div>
+        </div>
+        <div class="homework">
+            <p class="heading" id="head3">SAVE ADDRESS AS</p>
+            <div id="homework">
+                <div>Home</div>
+                <div>Work</div>
+            </div>
+        </div>
+        <div class="checkdefault">
+            <input type="checkbox">
+            <label for="">Make this my default address</label>
+        </div>
+
+        <button id="addAddress"><a href="#">ADD ADDRESS</a></button>
+
+    </div>
+
+    <div class="allcards">
+        <div id="cardcontainer">
+            <div><img src="./LOGO/256bit.png" alt=""></div>
+            <div><img src="./LOGO/bluecard.png" alt=""></div>
+            <div><img src="./LOGO/bhim.png" alt=""></div>
+            <div><img src="./LOGO/cashdel.png" alt=""></div>
+            <div><img src="./LOGO/mastercard.png" alt=""></div>
+            <div><img src="./LOGO/netbanking.png" alt=""></div>
+            <div><img src="./LOGO/paypal.png" alt=""></div>
+            <div><img src="./LOGO/rupay.png" alt=""></div>
+            <div><img src="./LOGO/visa.png" alt=""></div>
+            
+        </div>
+
+        <div id="needhelp">Need Help? Contact Us</div>
+    </div>
+
+    <!------------- address------------>
+    <div id="addressPopup">
+        <div id="outer">                      
+            <div id="addressContainer" >
+               <div id="div1"><span class="close">&times;</span></div>
+               
+               <p id="nameshow"></p>
+               <p class="ptag" id="mobshow"></p>
+               <p class="ptag" id="localAddrshow"></p>
+               <p class="ptag" id="pincodeshow"></p>
+               <p class="ptag" id="cityshow"></p>
+               <p class="ptag" id="stateShow"></p>
+            
+            </div>
+            <div id="continuebtn"><a href="./payment.html">CONTINUE</a></div>
+    
+      </div>
+    </div>
+
+        
+    
+    <script src="./scripts/address.js"></script>
+    <!-- <script src="./scripts/cart.js"></script> -->
+</body>
+</html>

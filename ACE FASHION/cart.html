@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ace Fashion</title>
+    <link rel="shortcut icon" href="./LOGO/ace_fashion_logo-removebg-preview.png" type="image/x-icon">
+</head>
+<link rel="stylesheet" href="./css/cart.css">
+<body>
+    <nav id="navbar">
+        <div id="div1">
+            <img src="./LOGO/ace_fashion_logo-removebg-preview.png" alt="Brand Logo" id="brandlogo">
+        </div>
+
+        <div id="div2">
+            <div><a id="bag" href="#">BAG</a></div>
+            <div><a id="address" href="#">ADDRESS</a></div>
+            <div><a id="payment" href="#">PAYMENT</a></div>
+
+        </div>
+
+        <div id="div3">
+            <img src="./LOGO/secure logo.png" alt="securelogo" id="securelogo">
+            <p id="securetext">100% SECURE</p>
+        </div>
+
+    </nav>
+
+    <div id="outercontainer">
+        <h2 id="Shoppingbag">Your Shopping Bag</h2>
+    <h4 id="totalitem">Total number of Item: <span>0</span></h4>
+<!-- main cart page-------------------------------------------------------------------------- -->
+    <div id="main">
+       
+        <div>
+            <div id="itemcontainer">
+                <input type="checkbox" id="checkbox" >
+           
+                <div id="imagecontainer"><img src="https://m.media-amazon.com/images/I/61ogPth2lzL._SX569_.jpg" alt="" id="itemimage"></div>
+    
+                <div id="detailscontainer">
+                    <h3 id="titleline">Title: <span id="title">sdflk dfslf sdf</span></h3>
+                    
+                    <p >Description: <span id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, inventore!</span></p>
+                    <p >Category: <span id="category">shoe</span></p>
+                    
+    
+                    <div id="quantityContainer">
+                        <div>
+                            <label for="number">Quantity: </label>
+                            <span id="quantityNum">1</span>
+                        </div>
+    
+                        <div id="updownarrow">
+                            <img src="./LOGO/up triangle.png" alt="">
+                            <br>
+                            <img src="./LOGO/down triangle.png" alt="">
+                        </div>
+    
+                        <button id="Remove">Remove</button>
+                        
+                    </div>
+    
+                    <div >
+                        <p id="price">11000</p>
+                    </div>
+            
+                </div>
+                
+            </div>
+
+        </div>
+<!--------------------subtotal page------------------------ -->
+
+        <div id="subtotalcontainer">
+            <p id="line1">SUPPORT TRANSFORMATIVE SOCIAL WORK IN INDIA</p>
+            <label id="line2" for="checkbox">Support Us</label>
+            <input type="checkbox" id="line2checkbox">
+
+            <div id="line3">
+                <div>₹10</div>
+                <div>₹50</div>
+                <div>₹100</div>
+                <div>Other</div>
+            </div>
+            <p id="line4">Know More</p>
+            <p id="line5">PRICE DETAILS (<span>1 Item</span>) </p>
+            <div id="line6_Billdiv">
+                <div id="line7">
+                    <div>Total MRP</div>
+                    <div>₹699</div>
+                </div>
+                <div>
+                    <div>Discount On MRP</div>
+                    <div>₹99</div>
+                </div>
+                
+                <div>
+                    <div>Coupon Discount</div>
+                    <div id="applycoupon">Apply Coupon</div>
+                </div>
+                <div>
+                    <div>Delivery Chages</div>
+                    <div id="free"><del style="text-align: line-through;  color: rgb(83, 83, 83);">₹49 </del>FREE</div>
+                </div>
+
+            </div>
+            <div id="totalamount">
+                <div>Total Amount</div>
+                <div>₹600</div>
+
+            </div>
+            <button id="placeorder"><a href="#">PLACE ORDER</a></button>
+
+
+        </div>
+    </div>
+    </div>
+
+
+    
+    <script src="./scripts/cart.js"></script>
+</body>
+</html>

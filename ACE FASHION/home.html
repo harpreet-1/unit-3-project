@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ace Fashion</title>
+    <link
+      rel="shortcut icon"
+      href="./LOGO/ace_fashion_logo-removebg-preview.png"
+      type="image/x-icon"
+    />
+  </head>
+  <link rel="stylesheet" href="./css/home.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <body>
+    <nav class="navbar">
+      <div class="nav">
+        <div class="logo">
+          <img src="/images/logo.jpeg" class="brand-logo" alt="" />
+          <a href="/index.html"> <span>ACE Fashion</span></a>
+        </div>
+        <div class="search">
+          <input
+            type="text"
+            class="search-box"
+            placeholder="search brand, product"
+          />
+          <button class="search-btn">search</button>
+        </div>
+        <div class="nav-items">
+          <a href="./ACE FASHION/signin.html"
+            ><i class="fa-solid fa-user-plus"
+              ><span> SignIn/Register</span></i
+            ></a
+          >
+          <a href="" id="logoutbtn"
+            ><i class="fa-solid fa-right-from-bracket"
+              ><span>Logout</span></i
+            ></a
+          >
+          <a href="./newCart.html"
+            ><i class="fa-solid fa-cart-shopping"><span> Cart</span></i></a
+          >
+        </div>
+      </div>
+
+      <!-- //// -->
+      <ul class="links-container">
+        <li class="link-item">
+          <a href="#" id="fashion" class="link">Fashion</a>
+        </li>
+        <li class="link-item">
+          <a href="#" id="beauty" class="link">Beauty & Personal care</a>
+        </li>
+        <li class="link-item">
+          <a href="#" id="home" class="link">Home decor</a>
+        </li>
+        <li class="link-item">
+          <a href="#" id="productsnearme" class="link">Products near me</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="main-section">
+      <div id="leftside">
+        <h1>Filter By</h1>
+        <div class="dropdown">
+          <div class="select">
+            <h3 class="selected">Price</h3>
+            <div class="caret"></div>
+          </div>
+          <ul class="menu">
+            <li>
+              <input value="200" name="Price" type="radio" />
+              <label for="200">500-1000</label>
+            </li>
+            <li>
+              <input value="500" name="Price" type="radio" />
+              <label for="500">1000-1500</label>
+            </li>
+            <li>
+              <input value="1000" name="Price" type="radio" />
+              <label for="1000">1500-2000</label>
+            </li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <div class="select">
+            <h3 class="selected">Discount</h3>
+            <div class="caret"></div>
+          </div>
+          <ul class="menu">
+            <li>
+              <input value="Discount" name="Discount" type="radio" />
+              <label for="0ormore">0% or more</label>
+            </li>
+
+            <li>
+              <input value="Discount" name="Discount" type="radio" />
+              <label for="">10% or more</label>
+            </li>
+            <li>
+              <input value="Discount" name="Discount" type="radio" />
+              <label for="">20% or more</label>
+            </li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <div class="select">
+            <h3 class="selected">Category</h3>
+            <div class="caret"></div>
+          </div>
+          <ul class="menu">
+            <li>
+              <input value="Category" name="Category" type="radio" />
+              <label for="">Packaged Items</label>
+            </li>
+
+            <li>
+              <input value="Category" name="Category" type="radio" />
+              <label for="">Packaged Foods</label>
+            </li>
+            <li>
+              <input value="Category" name="Category" type="radio" />
+              <label for="">Others</label>
+            </li>
+          </ul>
+        </div>
+        <h1>Sort By</h1>
+        <div class="dropdown">
+          <div class="select">
+            <h3 class="selected">Price</h3>
+            <div class="caret"></div>
+          </div>
+          <ul class="menu">
+            <li>
+              <input value="Medium" name="price" type="radio" />
+              <label for="Medium">Default</label>
+            </li>
+            <li>
+              <input value="High" name="price" type="radio" />
+              <label for="High">High</label>
+            </li>
+
+            <li>
+              <input value="Low" name="price" type="radio" />
+              <label for="Low">Low</label>
+            </li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <div class="select">
+            <h3 class="selected">Popular</h3>
+            <div class="caret"></div>
+          </div>
+          <ul class="menu">
+            <li>
+              <input value="Popular" name="Popular" type="radio" />
+              <label for="">High</label>
+            </li>
+            <li>
+              <input value="Popular" name="Popular" type="radio" />
+              <label for="">Medium</label>
+            </li>
+            <li>
+              <input value="Popular" name="Popular" type="radio" />
+              <label for="">Low</label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="dropdown">
+          <div class="select">
+            <h3 class="selected">Category</h3>
+            <div class="caret"></div>
+          </div>
+          <ul class="menu">
+            <li>
+              <input value="Category" name="Category" type="radio" />
+              <label for="">Packaged Items</label>
+            </li>
+
+            <li>
+              <input value="Category" name="Category" type="radio" />
+              <label for="">Packaged Foods</label>
+            </li>
+            <!-- <li>
+                        <input value="Category" name="Category" type="radio">
+                        <label for="">Others</label>
+                    </li> -->
+          </ul>
+        </div>
+
+        <div id="ad1">Yash</div>
+        <br />
+        <h3 id="popu">Popular Items</h3>
+        <br />
+        <div id="ad2"></div>
+      </div>
+
+      <div id="right-side">
+        <h2></h2>
+        <div id="container">
+          <!-- Here Append All the Products   -->
+        </div>
+        <div class="pagination-wrapper" id="pagination-wrapper"></div>
+      </div>
+    </div>
+    <br />
+    <!-- footer -->
+
+    <!-- footer section start -->
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <a href="index.html"
+              ><img
+                id="footer-logo"
+                src="/images/surajlogo.png"
+                alt=""
+                class="img-fluid logo-footer"
+            /></a>
+            <div class="footer-about">
+              <p>
+                India's most convenient online grocery channel Buyerapp Fresh
+                and Smart makes your grocery shopping even simpler. No more
+                hassles of sweating it out in crowded markets, grocery shops &
+                supermarkets - now shop from the comfort of your home; office,
+                or on the move. We offer you the convenience of shopping for
+                everything that you need for your home - be it fresh fruits &
+                vegetables, rice, dals, oil, packaged food, dairy item, frozen,
+                pet food, household cleaning items & personal care products from
+                a single virtual store.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="useful-link">
+              <h2>Useful Links</h2>
+              <img
+                src="./assets/images/about/home_line.png"
+                alt=""
+                class="img-fluid"
+              />
+              <div class="use-links">
+                <li>
+                  <a href="index.html"
+                    ><i class="fa-solid fa-angles-right"></i> Home</a
+                  >
+                </li>
+                <li>
+                  <a href="about.html"
+                    ><i class="fa-solid fa-angles-right"></i> About Us</a
+                  >
+                </li>
+                <li>
+                  <a href="gallery.html"
+                    ><i class="fa-solid fa-angles-right"></i> Gallery</a
+                  >
+                </li>
+                <li>
+                  <a href="contact.html"
+                    ><i class="fa-solid fa-angles-right"></i> Contact</a
+                  >
+                </li>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="social-links">
+              <h2>Follow Us</h2>
+              <img src="./assets/images/about/home_line.png" alt="" />
+              <div class="social-icons">
+                <li>
+                  <a href=""
+                    ><i class="fa-brands fa-facebook-f"></i> Facebook</a
+                  >
+                </li>
+                <li>
+                  <a href=""
+                    ><i class="fa-brands fa-instagram"></i> Instagram</a
+                  >
+                </li>
+                <li>
+                  <a href=""
+                    ><i class="fa-brands fa-linkedin-in"></i> Linkedin</a
+                  >
+                </li>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="address">
+              <h2>Address</h2>
+              <img
+                src="./assets/images/about/home_line.png"
+                alt=""
+                class="img-fluid"
+              />
+              <div class="address-links">
+                <li class="address1">
+                  <i class="fa-solid fa-location-dot"></i> Alexa Brindlam-
+                  cizwazram Dt Mumbai 682201
+                </li>
+                <li>
+                  <a href=""
+                    ><i class="fa-solid fa-phone"></i> +91 9045658455</a
+                  >
+                </li>
+                <li>
+                  <a href=""
+                    ><i class="fa-solid fa-envelope"></i> mail@asefashion.com</a
+                  >
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer section end -->
+    <!-- footer copy right section start -->
+    <section id="copy-right">
+      <div class="copy-right-sec">
+        <i class="fa-solid fa-copyright"></i> For Help, send an email to
+        customercare@acefashion.com <a href="#"> ACE Fashion</a>
+      </div>
+    </section>
+    <!-- footer copy right section end -->
+  </body>
+</html>
+<script src="./scripts/home.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
